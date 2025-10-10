@@ -65,7 +65,7 @@ def main():
     # 新闻列表
     news_list = data.get("newsList", [])
     for i, news in enumerate(news_list, 1):
-        lines.append(f"{i}. {news.get('title')}.。")
+        lines.append(f"{i}. {news.get('title')}。")
     lines.append("")
 
     # 精神/名言

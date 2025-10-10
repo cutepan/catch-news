@@ -52,7 +52,7 @@ lines.append("")
 # 新闻列表
 news_list = data.get("newsList", [])
 for i, news in enumerate(news_list, 1):
-    lines.append(f"{i}. {news.get('title')}"."\r\n")
+    lines.append(f"{i}. {news.get('title')}"."\n")
 lines.append("")
 
 # 精神/名言

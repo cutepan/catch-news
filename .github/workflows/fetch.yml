@@ -2,7 +2,7 @@ name: Daily Fetch News
 
 on:
   schedule:
-    - cron: "0 22 * * *"   # UTC 时间 22 点，对应北京时间早上 6 点
+    - cron: "0 23 * * *"   # UTC 时间 22 点，对应北京时间早上 6 点
   workflow_dispatch:       # 手动触发
 
 jobs:

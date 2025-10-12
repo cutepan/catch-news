@@ -76,8 +76,8 @@ def main():
         
     # 自动计算进度条
     percent = get_year_progress()
-    blocks = int(percent // 5)  # 每格代表5%
-    bar = "▓" * blocks + "░" * (20 - blocks)
+    blocks = int(percent // 10)  # 每格代表5%
+    bar = "▓" * blocks + "░" * (10 - blocks)
     lines.append("【今年进度条】")
     lines.append(bar)
     lines.append(f"{datetime.now().year}年，您已经使用了{percent:.2f}%")

@@ -58,7 +58,7 @@ def main():
     weather = data.get("weather", {}).get("detail", {})
     if weather:
         city = data.get("weather", {}).get("city", "")
-        lines.append(f"明天{city}{weather.get('text_day')}转{weather.get('text_night')}，"
+        lines.append(f"今天{city}{weather.get('text_day')}转{weather.get('text_night')}，"
                      f"{weather.get('low')} ~ {weather.get('high')}℃，微风")
     lines.append("")
 

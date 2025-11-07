@@ -48,7 +48,7 @@ def main():
     # 标题行
     cal = data.get("calendar", {})
     date_str = f"{cal.get('cMonth')}月{cal.get('cDay')}日{cal.get('ncWeek')}"
-    lunar_str = f"农历{cal.get('monthCn')}{cal.get('dayCn')}"
+    lunar_str = f"农历{cal.get('monthCn')}{cal.get('dayCn')}，{cal.get('term')}"
     lines.append(f"#海旁早报📑{date_str}，{lunar_str}")
 
     # 口号
